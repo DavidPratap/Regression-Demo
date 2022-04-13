@@ -1,6 +1,6 @@
 import sys
-if sys.version_info[0:2] != (3, 7):
-    raise Exception('Requires python 3.7')
+if sys.version_info[0:2] != (3, 8):
+    raise Exception('Requires python 3.8')
 import pandas as pd
 import streamlit as st
 from pycaret.regression import load_model, predict_model
