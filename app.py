@@ -1,6 +1,3 @@
-import sys
-if sys.version_info[0:2] != (3, 7):
-    raise Exception('Requires python 3.7')
 import pandas as pd
 import streamlit as st
 from pycaret.regression import load_model, predict_model
@@ -9,10 +6,6 @@ from pycaret.regression import load_model, predict_model
 # import the trained model
 model=load_model('Final_model')
 
-# # function to use predict model
-# def predict(model, data):
-#     predictions=predict_model(model, data)
-#     return predictions[0]
 
 # STEP2: GET NEW DATA FOR PREDICTION FROM THE FRONT END
 st.title("App to predict the house prices")
